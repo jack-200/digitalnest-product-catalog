@@ -49,12 +49,47 @@
 }
 
 .main-header-box h1 {
-  /* Ensure main header text is bold */
-  font-weight: bold;
-
   /* Override default margins */
   margin: 0;
 
   /* Paddings from header-box */
   padding: 0.5em;
+}
+
+.product-grid {
+  /* By default, grid elements stack vertically. */
+  /* We want a grid layout instead. */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  
+  /* Add gap between grid elements */
+  gap: 2em;
+
+  margin: 0 100px;
+}
+
+.product-card {
+  background: #fff;
+  
+  /* rounded-edges */
+  border-radius: 8px;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+  text-align: center;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+
+.product-card img {
+  width: 100%;
+}
+
+.products-title {
+  font-size: 1.7em;
+  color: #282c34;
+
+  margin: 1em 100px;
 }
