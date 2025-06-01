@@ -14,6 +14,9 @@ cd digitalnest-product-catalog
 # Add react-router-dom for client-side routing
 npm install react-router-dom
 
+# (Optional) GitHub Pages to deploy React app
+npm install gh-pages --save-dev
+
 # Start the development server
 npm start
 ```
