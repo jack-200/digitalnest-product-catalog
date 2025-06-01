@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+.main-header-box {
+  color: #5097ec;
+  background: #ffffff;
+  
+  /* Add a subtle shadow at the bottom */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+
+  /* Add margin spacing from next element */
+  margin-bottom: 2em;
+}
+
+.main-header-box h1 {
+  /* Ensure main header text is bold */
+  font-weight: bold;
+
+  /* Override default margins */
+  margin: 0;
+
+  /* Paddings from header-box */
+  padding: 0.5em;
+}
