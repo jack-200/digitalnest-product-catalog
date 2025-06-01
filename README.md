@@ -11,6 +11,9 @@ Remove-Item digitalnest-product-catalog\node_modules
 
 cd digitalnest-product-catalog
 
+# Add react-router-dom for client-side routing
+npm install react-router-dom
+
 # Start the development server
 npm start
 ```

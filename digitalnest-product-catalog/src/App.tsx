@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import ProductCard from "./components/ProductCard";
+import { Routes, Route } from "react-router-dom";
+import ProductDetailPage from "./components/ProductDetailPage";
 
 type Product = {
   id: string;
@@ -30,16 +32,26 @@ function App() {
       <header className="main-header-box">
         <h1>DigitalNest Shop</h1>
       </header>
-      <h2 className="products-title">Our Products</h2>
-      <div className="product-grid">
-        {loading ? (
-          <div>Loading...</div>
-        ) : (
-          products.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))
-        )}
-      </div>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <h2 className="products-title">Our Products</h2>
+              <div className="product-grid">
+                {loading ? (
+                  <div>Loading...</div>
+                ) : (
+                  products.map((product) => (
+                    <ProductCard key={product.id} product={product} />
+                  ))
+                )}
+              </div>
+            </>
+          }
+        />
+        <Route path="/product/:id" element={<ProductDetailPage />} />
+      </Routes>
     </>
   );
 }
