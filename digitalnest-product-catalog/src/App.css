@@ -40,7 +40,7 @@
 .main-header-box {
   color: #5097ec;
   background: #ffffff;
-  
+
   /* Add a subtle shadow at the bottom */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 
@@ -61,30 +61,11 @@
   /* We want a grid layout instead. */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  
+
   /* Add gap between grid elements */
   gap: 2em;
 
   margin: 0 100px;
-}
-
-.product-card {
-  background: #fff;
-  
-  /* rounded-edges */
-  border-radius: 8px;
-
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-
-  text-align: center;
-}
-
-.product-card:hover {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
-}
-
-.product-card img {
-  width: 100%;
 }
 
 .products-title {
@@ -92,4 +73,41 @@
   color: #282c34;
 
   margin: 1em 100px;
+}
+
+.product-card {
+  background: #fff;
+
+  border-radius: 8px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  /* Add more space at the bottom */
+  padding-bottom: 1em;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.product-card img {
+  width: 100%;
+}
+
+.product-name {
+  text-align: left;
+  font-size: 1.1em;
+  font-weight: bold;
+
+  padding-left: 1em; /* Move to the right */
+
+  margin-top: 1em; /* Space from image */
+}
+
+.product-price {
+  color: #5097ec;
+  font-weight: bold;
+  font-size: 1.2em;
+
+  padding-left: 1em; /* Move to the right */
 }
