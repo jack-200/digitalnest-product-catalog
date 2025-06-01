@@ -19,6 +19,9 @@ npm install gh-pages --save-dev
 
 # Start the development server
 npm start
+
+# Deploy on GitHub Pages
+npm run deploy
 ```
 
 https://jack-200.github.io/digitalnest-product-catalog

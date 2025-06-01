@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import ProductCard from "./components/ProductCard";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import ProductDetailPage from "./components/ProductDetailPage";
 
 type Product = {
@@ -28,7 +28,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter basename="/digitalnest-product-catalog">
+    <>
       <header className="main-header-box">
         <h1>DigitalNest Shop</h1>
       </header>
@@ -52,7 +52,7 @@ function App() {
         />
         <Route path="/product/:id" element={<ProductDetailPage />} />
       </Routes>
-    </BrowserRouter>
+    </>
   );
 }
 
