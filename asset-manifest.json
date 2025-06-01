@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/digitalnest-product-catalog/static/css/main.5bfe2199.css",
+    "main.js": "/digitalnest-product-catalog/static/js/main.454b5b64.js",
+    "static/js/453.a05fa3d7.chunk.js": "/digitalnest-product-catalog/static/js/453.a05fa3d7.chunk.js",
+    "index.html": "/digitalnest-product-catalog/index.html",
+    "main.5bfe2199.css.map": "/digitalnest-product-catalog/static/css/main.5bfe2199.css.map",
+    "main.454b5b64.js.map": "/digitalnest-product-catalog/static/js/main.454b5b64.js.map",
+    "453.a05fa3d7.chunk.js.map": "/digitalnest-product-catalog/static/js/453.a05fa3d7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5bfe2199.css",
+    "static/js/main.454b5b64.js"
+  ]
+}
